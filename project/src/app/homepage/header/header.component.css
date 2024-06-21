@@ -1,0 +1,16 @@
+.header {
+    background-color: rgb(235, 222, 103);
+    width: 100%; /* Use 100% to avoid horizontal overflow */
+    height: 40px;
+    display: flex;
+    align-items: center; /* Center the button vertically */
+    padding-left: 10px; /* Add padding if needed */
+    padding-right: 10px; /* Add padding if needed */
+}
+
+button {
+    margin-left: 90%; /* Push the button to the right */
+    background-color: rgb(235, 222, 103);
+    height: 30px;
+    margin-top: 0; /* Ensure consistent vertical alignment */
+}

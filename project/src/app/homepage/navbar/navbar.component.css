@@ -1,0 +1,26 @@
+
+
+.container {
+    background-color: rgb(243, 243, 243);
+    width: 100%; /* Ensure the width fits the viewport */
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center;
+    position: sticky; 
+    top: 0; /* Stick to the top when scrolled */
+    left: 0; /* Align it to the left edge */
+    z-index: 1000; /* Ensure it stays above other content */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.container h3 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the text within each h3 */
+    flex: 1; /* Ensure each h3 takes equal space */
+    font-family: 'Roboto', sans-serif; /* Example of a sleek and thin font */
+    font-weight: 300; /* Use a lighter weight (e.g., 300 for Roboto Thin) */
+}

@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1000px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align content */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 50px;
+}
+
+.text {
+    flex: 1; /* Take remaining space */
+    margin-right: 20px; /* Add margin for spacing between text and image */
+    font-family: 'Roboto', sans-serif; /* Example of a sleek and thin font */
+    font-weight: 300; /* Use a lighter weight (e.g., 300 for Roboto Thin) */
+}
+.text h2{
+    font-family: 'Roboto', sans-serif; /* Example of a sleek and thin font */
+    font-weight: 500; /* Use a lighter weight (e.g., 300 for Roboto Thin) */
+}
+
+.image {
+    max-width: 50%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
