@@ -1,1 +1,1 @@
-# brillianteoutcomes
+# brilliante-outcomes
