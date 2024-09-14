@@ -1,0 +1,16 @@
+.header {
+    background-color: rgb(159, 138, 183);
+    width: 100%; 
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+button {
+    margin-left: 90%; 
+    background-color:rgb(159, 138, 183);
+    height: 30px;
+    margin-top: 0; 
+}

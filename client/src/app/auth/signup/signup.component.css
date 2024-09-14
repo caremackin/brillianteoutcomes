@@ -1,0 +1,35 @@
+.header {
+    background-color: rgb(159, 138, 183);
+    width: 100%; /* Use 100% to avoid horizontal overflow */
+    height: 40px;
+    display: flex;
+    align-items: center; /* Center the button vertically */
+    padding-left: 10px; /* Add padding if needed */
+    padding-right: 10px; /* Add padding if needed */
+}
+
+.form{
+    padding-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.card{
+    top:20px;
+    width: 75%;
+    margin-left: 12%;
+}
+
+button {
+    background-color:rgb(159, 138, 183);
+    height: 30px;
+    margin-top: 0; 
+}
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
