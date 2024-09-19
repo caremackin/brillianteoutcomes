@@ -1,5 +1,6 @@
 <div class="container">
-    <h3>About</h3>
+    <h3 *ngIf="isAdmin" routerLink='admin'>Admin </h3>
+    <h3 routerLink='admin'>About</h3>
     <h3>Shop</h3>
     <h3>Blog</h3>
 </div>

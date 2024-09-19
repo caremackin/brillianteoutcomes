@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const { Sequelize } = require("sequelize");
 const userRoutes = require("./routes/user-routes");
 const PORT = 4000;
@@ -17,7 +18,15 @@ sequelize
     console.log(`Error connecting to database: ${err}`);
   });
 
+app.use(cors());
+
 app.use(express.json());
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
+  next();
+});
 
 app.use((req, res, next) => {
   console.log(`Request from url: ${req.url}`);

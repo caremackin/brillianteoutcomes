@@ -5,6 +5,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
+import { SignUpService } from '../../services/signup.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-signup',
   standalone: true,
@@ -15,7 +18,7 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
     ],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
@@ -23,7 +26,7 @@ import { RouterModule } from '@angular/router';
 export class SignupComponent {
   signupForm!: FormGroup;
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private signUpService: SignUpService, private router: Router){}
 
   ngOnInit(){
     this.signupForm = this.createFormGroup();
@@ -51,7 +54,28 @@ export class SignupComponent {
   }
 
   signup(){
-    console.log(this.signupForm.value)
+    this.addUser()
+    this.router.navigate(['/']);
+  }
+  
+  validateSignUp(){
+    
+  }
+
+
+
+  addUser(): void {
+    this.signUpService.addUser(this.signupForm.value).subscribe((newUser) => {
+      console.log(newUser);
+      this.signUpService.addUser(newUser);
+    })
+    console.log(this.signupForm.value);
+    //after submiting and sending user reset all values
+    this.signupForm.reset();
+    //set the form values to null so they dont error
+    Object.keys(this.signupForm.controls).forEach(key => {
+      this.signupForm.controls[key].setErrors(null)
+    });
   }
 
 

@@ -1,3 +1,5 @@
 <div class="header">
-    <button routerLink='signup'>Sign In</button>
+    <h3 *ngIf="isAuthenticated" class= "logout" (click)="logout()">Logout</h3>
+    <h3 *ngIf="!isAuthenticated" class= "login-btn" routerLink='login'>Login</h3>
+    <h3 *ngIf="!isAuthenticated" class= "signup-btn" routerLink='signup'>Sign Up</h3>
 </div>

@@ -4,13 +4,31 @@
     height: 40px;
     display: flex;
     align-items: center; 
-    padding-left: 10px; 
-    padding-right: 10px;
+    /* padding-left: 10px; 
+    padding-right: 10px; */
 }
 
-button {
-    margin-left: 90%; 
-    background-color:rgb(159, 138, 183);
+.login-btn {
+    margin-left: 87%; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300; 
     height: 30px;
-    margin-top: 0; 
+    margin-top: 25px; 
+}
+
+.signup-btn {
+    margin-left: 20px; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300; 
+    height: 30px;
+    margin-top: 25px; 
+}
+
+
+.logout {
+    margin-left: 94%; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300; 
+    height: 30px;
+    margin-top: 25px; 
 }

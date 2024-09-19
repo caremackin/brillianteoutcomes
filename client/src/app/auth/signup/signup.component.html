@@ -1,6 +1,9 @@
 <div class="header"> <button [routerLink]="['/']">Return</button></div>
 
 <mat-card class="card">
+    <div class="container">
+    <h4>Sign Up for Brilliante Outcomes</h4>
+    </div>
     <form [formGroup]="signupForm" (ngSubmit)="signup()">
         <div>
             <mat-form-field class="form">
@@ -20,7 +23,7 @@
                 <input matInput formControlName="confirm_password">
             </mat-form-field>
         </div>
-        <div class="button-container">
+        <div class="container">
         <button class="btn" mat-flat-button type="submit" [disabled]="!signupForm.valid">Signup</button>
         </div>
     </form>
