@@ -18,7 +18,7 @@ export class HeaderComponent {
 
   constructor(private auth: AuthService) {}
 
-  ngOnInit() {
+ngOnInit() {
   this.auth.isAuthenticated().subscribe((status) => {
     this.isAuthenticated = status;
     const stateId = this.auth.getStateId();
